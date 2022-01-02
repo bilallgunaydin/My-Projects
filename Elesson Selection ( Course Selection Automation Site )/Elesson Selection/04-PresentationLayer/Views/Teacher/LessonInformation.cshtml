@@ -1,0 +1,48 @@
+﻿@using Entities
+@model List<Student>
+@{
+    ViewBag.Title = "LessonInformation";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+<style>
+    .colon {
+        background-color:cornflowerblue;
+    }
+</style>
+<h1 style="text-align:center">Dersimle İlgili Bilgiler</h1>
+
+<table class="table table-bordered">
+    <colgroup>
+        <col style="width:30%" />
+        <col style="width:30%" />
+        <col style="width:40%" />
+    </colgroup>
+    <thead>
+
+        <tr>
+            <th class ="colon">Öğrenci Adı</th>
+            <th class ="colon">Öğrenci Soyadı</th>
+            <th class ="colon">Dersimin Adı</th>
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @{
+            Student student;
+            for (int i = 0; i < Model.Count; i++)
+            {
+
+                student = Model[i];
+                <tr>
+                    <td>@student.FirstName</td>
+                    <td>@student.LastName</td>
+                    <td>@ViewBag.LessonName</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
+

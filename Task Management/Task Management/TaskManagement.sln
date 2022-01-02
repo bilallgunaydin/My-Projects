@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01Entities", "01Entities", "{4D5C4A8F-13BC-47C6-94B5-E4E0E4228E78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02DataAccessLayer", "02DataAccessLayer", "{F8E28347-AD6D-41CE-8C8C-E3029A85B6A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03BussinesLayer", "03BussinesLayer", "{45093732-3F24-41F9-B2A8-99D515C3D936}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04PresentationLayer", "04PresentationLayer", "{24631E3C-9794-4E22-8109-7D6B329D193A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Entities", "01-Entities\01-Entities.csproj", "{6487F38D-699F-4472-8BA8-320FD73CF619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-DataAccessLayer", "02-DataAccessLayer\02-DataAccessLayer.csproj", "{B4491D1F-9B89-4074-A8F9-1F9BCBBA29BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WForm", "WForm\WForm.csproj", "{38799468-5EBF-4B87-8E77-99A790A08A8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03BusinessLayer", "03BusinessLayer\03BusinessLayer.csproj", "{58C3ACC1-C94C-4A51-8E09-591C54DA32AE}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://turgaykaya10.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 01-Entities\\01-Entities.csproj
+		SccProjectTopLevelParentUniqueName1 = TaskManagement.sln
+		SccProjectName1 = 01-Entities
+		SccLocalPath1 = 01-Entities
+		SccProjectUniqueName2 = 02-DataAccessLayer\\02-DataAccessLayer.csproj
+		SccProjectTopLevelParentUniqueName2 = TaskManagement.sln
+		SccProjectName2 = 02-DataAccessLayer
+		SccLocalPath2 = 02-DataAccessLayer
+		SccProjectUniqueName3 = WForm\\WForm.csproj
+		SccProjectTopLevelParentUniqueName3 = TaskManagement.sln
+		SccProjectName3 = WForm
+		SccLocalPath3 = WForm
+		SccProjectUniqueName4 = 03BusinessLayer\\03BusinessLayer.csproj
+		SccProjectTopLevelParentUniqueName4 = TaskManagement.sln
+		SccProjectName4 = 03BusinessLayer
+		SccLocalPath4 = 03BusinessLayer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6487F38D-699F-4472-8BA8-320FD73CF619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6487F38D-699F-4472-8BA8-320FD73CF619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6487F38D-699F-4472-8BA8-320FD73CF619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6487F38D-699F-4472-8BA8-320FD73CF619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4491D1F-9B89-4074-A8F9-1F9BCBBA29BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4491D1F-9B89-4074-A8F9-1F9BCBBA29BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4491D1F-9B89-4074-A8F9-1F9BCBBA29BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4491D1F-9B89-4074-A8F9-1F9BCBBA29BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38799468-5EBF-4B87-8E77-99A790A08A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38799468-5EBF-4B87-8E77-99A790A08A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38799468-5EBF-4B87-8E77-99A790A08A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38799468-5EBF-4B87-8E77-99A790A08A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C3ACC1-C94C-4A51-8E09-591C54DA32AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C3ACC1-C94C-4A51-8E09-591C54DA32AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C3ACC1-C94C-4A51-8E09-591C54DA32AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C3ACC1-C94C-4A51-8E09-591C54DA32AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6487F38D-699F-4472-8BA8-320FD73CF619} = {4D5C4A8F-13BC-47C6-94B5-E4E0E4228E78}
+		{B4491D1F-9B89-4074-A8F9-1F9BCBBA29BA} = {F8E28347-AD6D-41CE-8C8C-E3029A85B6A3}
+		{38799468-5EBF-4B87-8E77-99A790A08A8A} = {24631E3C-9794-4E22-8109-7D6B329D193A}
+		{58C3ACC1-C94C-4A51-8E09-591C54DA32AE} = {45093732-3F24-41F9-B2A8-99D515C3D936}
+	EndGlobalSection
+EndGlobal

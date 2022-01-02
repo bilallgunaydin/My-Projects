@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{BE4F7A60-1A16-4DB2-8904-EB38DF42443B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{04B535D6-95C0-45D2-8D27-BEDC63A0727C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Access Layer", "Data Access Layer", "{57816551-8A9D-4BE6-938D-AB586956A6CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{442D4140-EF65-4D04-A8C9-12486A5534E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business Layer", "{947E6A14-FB77-47D2-A86F-8333C447A00C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{49780A8C-3430-4B9D-B46D-60647003F6CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{79D66393-033C-4E85-9F31-170064F2C7E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormAppMHRS", "FormAppMHRS\FormAppMHRS.csproj", "{96BB2672-C9F3-45FB-925B-11DC73F94676}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04B535D6-95C0-45D2-8D27-BEDC63A0727C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B535D6-95C0-45D2-8D27-BEDC63A0727C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B535D6-95C0-45D2-8D27-BEDC63A0727C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B535D6-95C0-45D2-8D27-BEDC63A0727C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{442D4140-EF65-4D04-A8C9-12486A5534E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{442D4140-EF65-4D04-A8C9-12486A5534E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{442D4140-EF65-4D04-A8C9-12486A5534E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{442D4140-EF65-4D04-A8C9-12486A5534E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49780A8C-3430-4B9D-B46D-60647003F6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49780A8C-3430-4B9D-B46D-60647003F6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49780A8C-3430-4B9D-B46D-60647003F6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49780A8C-3430-4B9D-B46D-60647003F6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96BB2672-C9F3-45FB-925B-11DC73F94676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96BB2672-C9F3-45FB-925B-11DC73F94676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96BB2672-C9F3-45FB-925B-11DC73F94676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96BB2672-C9F3-45FB-925B-11DC73F94676}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04B535D6-95C0-45D2-8D27-BEDC63A0727C} = {BE4F7A60-1A16-4DB2-8904-EB38DF42443B}
+		{442D4140-EF65-4D04-A8C9-12486A5534E0} = {57816551-8A9D-4BE6-938D-AB586956A6CF}
+		{49780A8C-3430-4B9D-B46D-60647003F6CF} = {947E6A14-FB77-47D2-A86F-8333C447A00C}
+		{96BB2672-C9F3-45FB-925B-11DC73F94676} = {79D66393-033C-4E85-9F31-170064F2C7E8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://frhtdmrc.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Entities\\Entities.csproj
+		SccProjectTopLevelParentUniqueName1 = MHRS.sln
+		SccProjectName1 = Entities
+		SccLocalPath1 = Entities
+		SccProjectUniqueName2 = DataAccessLayer\\DataAccessLayer.csproj
+		SccProjectTopLevelParentUniqueName2 = MHRS.sln
+		SccProjectName2 = DataAccessLayer
+		SccLocalPath2 = DataAccessLayer
+		SccProjectUniqueName3 = BusinessLayer\\BusinessLayer.csproj
+		SccProjectTopLevelParentUniqueName3 = MHRS.sln
+		SccProjectName3 = BusinessLayer
+		SccLocalPath3 = BusinessLayer
+		SccProjectUniqueName4 = FormAppMHRS\\FormAppMHRS.csproj
+		SccProjectTopLevelParentUniqueName4 = MHRS.sln
+		SccProjectName4 = FormAppMHRS
+		SccLocalPath4 = FormAppMHRS
+	EndGlobalSection
+EndGlobal

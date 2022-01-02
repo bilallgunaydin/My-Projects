@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38799468-5EBF-4B87-8E77-99A790A08A8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WForm</RootNamespace>
+    <AssemblyName>WForm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Project Manager\CustomerAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Manager\CustomerAddForm.Designer.cs">
+      <DependentUpon>CustomerAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Manager\CustomerListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Manager\CustomerListForm.Designer.cs">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Manager\EmployeeAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Manager\EmployeeAddForm.Designer.cs">
+      <DependentUpon>EmployeeAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Manager\EmployeeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Manager\EmployeeListForm.Designer.cs">
+      <DependentUpon>EmployeeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Project Manager\ProjectCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Manager\ProjectCreateForm.Designer.cs">
+      <DependentUpon>ProjectCreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Manager\ProjectEmployeeAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Manager\ProjectEmployeeAddForm.Designer.cs">
+      <DependentUpon>ProjectEmployeeAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Manager\ProjectListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Manager\ProjectListForm.Designer.cs">
+      <DependentUpon>ProjectListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Manager\ProjectManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Manager\ProjectManager.Designer.cs">
+      <DependentUpon>ProjectManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Manager\pmTaskListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Manager\pmTaskListForm.Designer.cs">
+      <DependentUpon>pmTaskListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Software Developer\SoftwareDeveloper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Software Developer\SoftwareDeveloper.Designer.cs">
+      <DependentUpon>SoftwareDeveloper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Team Leader\CreateMissionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team Leader\CreateMissionForm.Designer.cs">
+      <DependentUpon>CreateMissionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Team Leader\CustomerListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team Leader\CustomerListForm.Designer.cs">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Team Leader\CustomerRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team Leader\CustomerRequestForm.Designer.cs">
+      <DependentUpon>CustomerRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Team Leader\ProjectListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team Leader\ProjectListForm.Designer.cs">
+      <DependentUpon>ProjectListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Team Leader\TaskListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team Leader\TaskListForm.Designer.cs">
+      <DependentUpon>TaskListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Team Leader\TeamLeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team Leader\TeamLeader.Designer.cs">
+      <DependentUpon>TeamLeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tester\Tester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tester\Tester.Designer.cs">
+      <DependentUpon>Tester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Work Analyst\WProjectListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Analyst\WProjectListForm.Designer.cs">
+      <DependentUpon>WProjectListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Work Analyst\WorkAnalyst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Analyst\WorkAnalyst.Designer.cs">
+      <DependentUpon>WorkAnalyst.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Project Manager\CustomerAddForm.resx">
+      <DependentUpon>CustomerAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Manager\CustomerListForm.resx">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Manager\EmployeeAddForm.resx">
+      <DependentUpon>EmployeeAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Manager\EmployeeListForm.resx">
+      <DependentUpon>EmployeeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Manager\ProjectCreateForm.resx">
+      <DependentUpon>ProjectCreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Manager\ProjectEmployeeAddForm.resx">
+      <DependentUpon>ProjectEmployeeAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Manager\ProjectListForm.resx">
+      <DependentUpon>ProjectListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Manager\ProjectManager.resx">
+      <DependentUpon>ProjectManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Manager\pmTaskListForm.resx">
+      <DependentUpon>pmTaskListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Software Developer\SoftwareDeveloper.resx">
+      <DependentUpon>SoftwareDeveloper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team Leader\CreateMissionForm.resx">
+      <DependentUpon>CreateMissionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team Leader\CustomerListForm.resx">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team Leader\CustomerRequestForm.resx">
+      <DependentUpon>CustomerRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team Leader\ProjectListForm.resx">
+      <DependentUpon>ProjectListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team Leader\TaskListForm.resx">
+      <DependentUpon>TaskListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team Leader\TeamLeader.resx">
+      <DependentUpon>TeamLeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tester\Tester.resx">
+      <DependentUpon>Tester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Analyst\WProjectListForm.resx">
+      <DependentUpon>WProjectListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Analyst\WorkAnalyst.resx">
+      <DependentUpon>WorkAnalyst.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\01-Entities\01-Entities.csproj">
+      <Project>{6487f38d-699f-4472-8ba8-320fd73cf619}</Project>
+      <Name>01-Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\03BusinessLayer\03BusinessLayer.csproj">
+      <Project>{58c3acc1-c94c-4a51-8e09-591c54da32ae}</Project>
+      <Name>03BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

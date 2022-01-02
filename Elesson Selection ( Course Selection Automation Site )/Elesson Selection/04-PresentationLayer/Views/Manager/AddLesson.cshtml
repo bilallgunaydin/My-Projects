@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "AddLesson";
+    Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .btnAdd {
+        width: 230px;
+        height: 60px;
+        font-size: x-large;
+        background-color: #5cb85c !important;
+    }
+
+        .btnAdd:hover {
+            background: #fff !important;
+            color: #444 !important;
+            border: 2px solid #444 !important;
+            box-shadow: none;
+            outline: none;
+        }
+
+    .btnCancel {
+        width: 230px;
+        height: 60px;
+        font-size: x-large;
+    }
+
+        .btnCancel:hover {
+            background: #fff !important;
+            color: #444 !important;
+            border: 2px solid #444 !important;
+            box-shadow: none;
+            outline: none;
+        }
+</style>
+<h1 style="text-align:center">Ders Ekle</h1>
+<form method="post" action="/Manager/AddLessonn">
+    <div class="row">
+        <div id="Message" style="display:none" class="text-center alert alert-success">@TempData["Message"]</div>
+        <div id="error-message" style="display:none" class="text-center alert alert-danger">@TempData["ErrorMessage"]</div>
+    </div>
+    <div class="form-group">
+        <label>Dersin Adı :</label>
+        <input type="text" class="form-control" name="lessonName" />
+    </div>
+    <div class="form-group">
+        <label>Dersin Kredisi :</label>
+        <input type="text" class="form-control" name="lessonCredit" />
+    </div>
+    <div class="form-group">
+        <button class="col-md-4 col-lg-4 col-sm-4 col-xs-4 btn btn-success btnAdd form-control">Kaydet</button>
+        <a href="/Manager/Index" class="col-md-offset-4 col-lg-offset-4 col-sm-offset-4 col-xs-offset-4 btn btn-danger pull-right btnCancel form-control">İptal</a>
+    </div>
+</form>
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script>
+    if ($("#error-message").html() != "") {
+        $("#error-message").slideDown();
+        setTimeout(function () {
+            $("#error-message").slideUp();
+        }, 5000)
+    }
+    if ($("#Message").html() != "") {
+        $("#Message").slideDown();
+        setTimeout(function () {
+            $("#Message").slideUp();
+        }, 5000)
+    }
+</script>
+

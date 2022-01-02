@@ -1,0 +1,78 @@
+﻿@using Entities
+@model List<Teacher>
+@{
+    ViewBag.Title = "UpdateTeacher";
+    Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+<style>
+    .btnDelete {
+        width: 230px;
+        height: 60px;
+        font-size: x-large;
+        
+    }
+
+        .btnDelete:hover {
+            background: #fff !important;
+            color: #444 !important;
+            border: 2px solid #444 !important;
+            box-shadow: none;
+            outline: none;
+        }
+
+    
+</style>
+<h1 style="text-align:center">Öğretmenleri Güncelle</h1>
+<div class="row">
+    <div id="Message" style="display:none" class="text-center alert alert-success">@TempData["Message"]</div>
+    <div id="error-message" style="display:none" class="text-center alert alert-danger">@TempData["ErrorMessage"]</div>
+</div>
+<table class="table table-bordered">
+    <colgroup>
+        <col style="width:80%"/>
+        <col style="width:20%"/>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Adı Soyadı</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @{
+            Teacher teacher;
+            for (int i = 0; i < Model.Count; i++)
+            {
+                teacher = Model[i];
+                <tr>
+                    <td>@teacher.FullName</td>
+                    <td>
+                        <form method="post" action="/Manager/UpdateTeacherr">
+                            <input type="hidden" value="@teacher.ID" name="id"/>
+                            <button class="col-md-4 col-lg-4 col-sm-4 col-xs-4 btn btn-danger btnDelete form-control">Sil</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script>
+    if ($("#error-message").html() != "") {
+        $("#error-message").slideDown();
+        setTimeout(function () {
+            $("#error-message").slideUp();
+        }, 5000)
+    }
+    if ($("#Message").html() != "") {
+        $("#Message").slideDown();
+        setTimeout(function () {
+            $("#Message").slideUp();
+        }, 5000)
+    }
+</script>
+
+
+

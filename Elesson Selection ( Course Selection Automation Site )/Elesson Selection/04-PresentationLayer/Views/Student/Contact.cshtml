@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+<style>
+    .mailGonder {
+        width: 230px;
+        height: 60px;
+        font-size: x-large;
+    }
+
+        .mailGonder:hover {
+            background: #fff !important;
+            color: #444 !important;
+            border: 2px solid #444 !important;
+            box-shadow: none;
+            outline: none;
+        }
+</style>
+<h1 style="text-align:center">İletişim</h1><br />
+<form action="/Student/Contact" method="post">
+    <div class="row">
+        <div id="Message" style="display:none" class="text-center alert alert-success">@TempData["Message"]</div>
+        <div id="error-message" style="display:none" class="text-center alert alert-danger">@TempData["ErrorMessage"]</div>
+    </div>
+    <div class="form-group">
+        <label>Konu :</label>
+        <input type="text" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>İçerik :</label>
+        <textarea class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <button class="col-md-offset-4 col-lg-offset-4 col-sm-offset-4 col-xs-offset-4 mailGonder btn btn-danger form-control">Gönder</button>
+    </div>
+</form>
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script>
+    if ($("#error-message").html() != "") {
+        $("#error-message").slideDown();
+        setTimeout(function () {
+            $("#error-message").slideUp();
+        }, 5000)
+    }
+    if ($("#Message").html() != "") {
+        $("#Message").slideDown();
+        setTimeout(function () {
+            $("#Message").slideUp();
+        }, 5000)
+    }
+</script>
+
+
+

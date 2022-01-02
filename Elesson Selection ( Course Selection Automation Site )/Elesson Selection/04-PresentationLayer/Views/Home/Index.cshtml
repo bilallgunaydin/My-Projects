@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        .logo {
+            width: 295px;
+            height: 334px;
+        }
+
+        .btn:hover, .btn:focus, .btn:active {
+            background: #fff !important;
+            color: #444 !important;
+            border: 2px solid #444 !important;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .teacherlogin {
+            margin-left: 7%;
+        }
+
+        .maindiv {
+            margin-top: 10%;
+            width: 53%;
+            height: 400px;
+        }
+
+        .studentlogin {
+            margin-left: 25%;
+        }
+
+        .well {
+            background-color: lightgray;
+            margin-top: 10%;
+            border-radius: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-sm-offset-3 maindiv well">
+            <div class="teacher col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <img src="/Images/Teacher-icon.png" class="logo" />
+                <a href="/Teacher/Login" class="btn btn-primary right teacherlogin">Öğretmen girişi için tıklayınız</a>
+            </div>
+            <div class="student col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <img src="/Images/Student-icon.png" class="logo" />
+                <a href="/Student/Login" class="btn btn-primary right studentlogin">Öğrenci girişi için tıklayınız</a>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

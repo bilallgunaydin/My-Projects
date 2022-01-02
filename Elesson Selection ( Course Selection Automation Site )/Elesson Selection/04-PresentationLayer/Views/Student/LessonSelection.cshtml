@@ -1,0 +1,98 @@
+﻿@using Entities
+@model List<Lesson>
+@{
+    ViewBag.Title = "LessonSelection";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+<style>
+    .colon {
+        background-color: cornflowerblue;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    .btnAdd {
+        width: 230px;
+        height: 60px;
+        font-size: x-large;
+        background-color: #5cb85c !important;
+    }
+
+        .btnAdd:hover {
+            background: #fff !important;
+            color: #444 !important;
+            border: 2px solid #444 !important;
+            box-shadow: none;
+            outline: none;
+        }
+
+    .btnCancel {
+        width: 230px;
+        height: 60px;
+        font-size: x-large;
+    }
+
+        .btnCancel:hover {
+            background: #fff !important;
+            color: #444 !important;
+            border: 2px solid #444 !important;
+            box-shadow: none;
+            outline: none;
+        }
+    
+</style>
+<h1 style="text-align:center">Ders Seçimi</h1>
+<form method="post" action="/Student/LessonSelection">
+
+    <div class="row">
+        <div id="Message" style="display:none" class="text-center alert alert-success">@TempData["Message"]</div>
+        <div id="error-message" style="display:none" class="text-center alert alert-danger">@TempData["ErrorMessage"]</div>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="colon">Ders Adı</th>
+                <th class="colon">Dersin Öğretmeni</th>
+                <th class="colon">Dersin Kredisi</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @{
+                Lesson lesson;
+                for (int i = 0; i < Model.Count; i++)
+                {
+                    lesson = Model[i];
+                    <tr>
+                        <td>@lesson.Name</td>
+                        <td>@lesson.Teacher.FullName</td>
+                        <td>@lesson.Credit</td>
+                        <td><input type="checkbox" name="LessonChecked" value="@lesson.ID" /></td>
+                    </tr>
+                }
+
+            }
+        </tbody>
+    </table>
+    <div class="form-group">
+        <button class="col-md-4 col-lg-4 col-sm-4 col-xs-4 btn btn-success btnAdd form-control">Kaydet</button>
+        <a href="/Student/Index" class="col-md-offset-4 col-lg-offset-4 col-sm-offset-4 col-xs-offset-4 btn btn-danger pull-right btnCancel form-control">İptal</a>
+    </div>
+</form>
+<script src="~/Scripts/jquery-3.1.1.js"></script>
+<script>
+    if ($("#error-message").html() != "") {
+        $("#error-message").slideDown();
+        setTimeout(function () {
+            $("#error-message").slideUp();
+        }, 5000)
+    }
+    if ($("#Message").html() != "") {
+        $("#Message").slideDown();
+        setTimeout(function () {
+            $("#Message").slideUp();
+        }, 5000)
+    }
+</script>
+

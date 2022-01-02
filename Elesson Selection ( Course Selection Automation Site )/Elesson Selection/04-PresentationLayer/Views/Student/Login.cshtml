@@ -1,0 +1,63 @@
+﻿    <html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Giriş</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        .well {
+            background-color: lightgray;
+            margin-top: 3%;
+            box-shadow: 0px 0px 20px 5px #62afdc;
+        }
+
+        .logo {
+            margin-bottom: 4%;
+        }
+
+        .btn {
+            font-size: 23px;
+        }
+            .btn:hover, .btn:focus, .btn:active {
+                background: #fff !important;
+                color: #444 !important;
+                box-shadow: none;
+                outline: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4 col-xm-6 col-sm-offset-3 col-xs-10 col-cs-offset-1 well">
+            <form class="text-center" method="post" action="/Student/Login">
+                <div class="logo">
+                    <img src="/Images/Student-logo.png" style="width:100%" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="userId" class="form-control" placeholder="Mail Adresi..." />
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Parola..." />
+                </div>
+
+                <div class="form-group text-center alert alert-danger" id="error-message" style="display:none">@ViewBag.ErrorMessage</div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Giriş</button>
+                </div>
+                <a href="/Student/ForgetPassword">Şifrenizi mi unuttunuz?</a>
+            </form>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            if ($("#error-message").text() != "") {
+                $("#error-message").slideDown();
+                setTimeout(function () {
+                    $("#error-message").slideUp();
+                }, 3000)
+            }
+        })
+    </script>
+</body>
+</html>
