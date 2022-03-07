@@ -1,4 +1,4 @@
-Movie Store Project
+**Movie Store Project
 
 The purpose of this application is to create a movie store using a WebApi.
 
