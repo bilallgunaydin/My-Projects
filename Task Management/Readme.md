@@ -8,4 +8,4 @@ There are 5 different employee types in the software.
 * Test Specialist
 * Software developer
 
-Technologies used in the project: N-tier, TFS 2015, Entity Framework/Code-First, SQL Server 2014/T-SQL,Windows Form/C#, Trello
+**Technologies used in the project: N-tier, TFS 2015, Entity Framework/Code-First, SQL Server 2014/T-SQL,Windows Form/C#, Trello
