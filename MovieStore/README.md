@@ -6,11 +6,11 @@ Architecture
 * Object Orient Programing
 
 
-Use Technologies
+**Use Technologies**
 * .NET CORE 5 Web Api
 
 
-Use Package
+**Use Package**
 * Entity Framework
 * Fluent Validation
 * AutoMapper
