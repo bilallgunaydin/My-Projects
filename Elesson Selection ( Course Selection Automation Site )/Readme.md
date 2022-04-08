@@ -1,1 +1,3 @@
 The development purpose of this project is to make a course assignment automation site. There are 3 user types in the project. The administrator user type, which is one of these user types, manages the courses, teachers and students. The teacher user type sees the information of the lesson assigned to the teacher and the student list of that lesson. Student user type chooses courses according to a credit limit. The student user type sees the list of the selected courses and the teacher of that course. There are 3 different login entries and screens.
+
+**Technologies used in the project: N-Tier, Entity Framework / CodeFirst, Sql Server 2014 /T-SQL, Asp.Net MVC, Html, Css, Javascript, Jquery, Bootstrap**
